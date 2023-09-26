@@ -1,0 +1,14 @@
+C:\Pasha\Studies\2023-2024_(4_course)\1_semester\Cross-platform programming\Kod\Lab_1\Lab_1_1\bin\Debug\net7.0\Lab_1_1.exe
+C:\Pasha\Studies\2023-2024_(4_course)\1_semester\Cross-platform programming\Kod\Lab_1\Lab_1_1\bin\Debug\net7.0\Lab_1_1.deps.json
+C:\Pasha\Studies\2023-2024_(4_course)\1_semester\Cross-platform programming\Kod\Lab_1\Lab_1_1\bin\Debug\net7.0\Lab_1_1.runtimeconfig.json
+C:\Pasha\Studies\2023-2024_(4_course)\1_semester\Cross-platform programming\Kod\Lab_1\Lab_1_1\bin\Debug\net7.0\Lab_1_1.dll
+C:\Pasha\Studies\2023-2024_(4_course)\1_semester\Cross-platform programming\Kod\Lab_1\Lab_1_1\bin\Debug\net7.0\Lab_1_1.pdb
+C:\Pasha\Studies\2023-2024_(4_course)\1_semester\Cross-platform programming\Kod\Lab_1\Lab_1_1\obj\Debug\net7.0\Lab_1_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Pasha\Studies\2023-2024_(4_course)\1_semester\Cross-platform programming\Kod\Lab_1\Lab_1_1\obj\Debug\net7.0\Lab_1_1.AssemblyInfoInputs.cache
+C:\Pasha\Studies\2023-2024_(4_course)\1_semester\Cross-platform programming\Kod\Lab_1\Lab_1_1\obj\Debug\net7.0\Lab_1_1.AssemblyInfo.cs
+C:\Pasha\Studies\2023-2024_(4_course)\1_semester\Cross-platform programming\Kod\Lab_1\Lab_1_1\obj\Debug\net7.0\Lab_1_1.csproj.CoreCompileInputs.cache
+C:\Pasha\Studies\2023-2024_(4_course)\1_semester\Cross-platform programming\Kod\Lab_1\Lab_1_1\obj\Debug\net7.0\Lab_1_1.dll
+C:\Pasha\Studies\2023-2024_(4_course)\1_semester\Cross-platform programming\Kod\Lab_1\Lab_1_1\obj\Debug\net7.0\refint\Lab_1_1.dll
+C:\Pasha\Studies\2023-2024_(4_course)\1_semester\Cross-platform programming\Kod\Lab_1\Lab_1_1\obj\Debug\net7.0\Lab_1_1.pdb
+C:\Pasha\Studies\2023-2024_(4_course)\1_semester\Cross-platform programming\Kod\Lab_1\Lab_1_1\obj\Debug\net7.0\Lab_1_1.genruntimeconfig.cache
+C:\Pasha\Studies\2023-2024_(4_course)\1_semester\Cross-platform programming\Kod\Lab_1\Lab_1_1\obj\Debug\net7.0\ref\Lab_1_1.dll
