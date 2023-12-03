@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Lab3_1/1.0.0": {
+        "dependencies": {
+          "LabsLibrary": "1.0.0"
+        },
+        "runtime": {
+          "Lab3_1.dll": {}
+        }
+      },
+      "LabsLibrary/1.0.0": {
+        "runtime": {
+          "LabsLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lab3_1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LabsLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

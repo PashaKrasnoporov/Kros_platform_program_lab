@@ -1,0 +1,42 @@
+
+Vagrant.configure("2") do |config|
+  # The most common configuration options are documented and commented below.
+  # For a complete reference, please see the online documentation at
+  # https://docs.vagrantup.com.
+ 
+  # Every Vagrant development environment requires a box. You can search for
+  # boxes at https://atlas.hashicorp.com/search.
+  config.vm.box = "debian/bookworm64"
+ 
+  # Disable automatic box update checking. If you disable this, then
+  # boxes will only be checked for updates when the user runs
+  # `vagrant box outdated`. This is not recommended.
+  config.vm.box_check_update = false
+ 
+ 
+  # Створення машини з доступом до основної мережі хост-системи. Це треба для доступу до локального серверу з Nuget пакетами
+  config.vm.network "public_network"
+ 
+   config.vm.synced_folder "f:\\1UNIVERSITY\\4_corse_univ\\Kros_progr\\Lab4-29.11\\lab4\\Lab4", "/Desktop"
+  
+  config.vm.provision "shell", inline: <<-SHELL
+
+    # База
+    apt-get update
+    apt-get upgrade
+  
+    # Встановлення
+
+    wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+    sudo dpkg -i packages-microsoft-prod.deb
+    rm packages-microsoft-prod.deb
+
+    sudo apt-get update && sudo apt-get install -y dotnet-sdk-7.0
+
+    # Встановлення CLI
+
+    dotnet tool install --global --version 3.0.0 --add-source http://192.168.3.11:5555/v3/index.json --no-cache Lab4
+
+    SHELL
+ 
+end
