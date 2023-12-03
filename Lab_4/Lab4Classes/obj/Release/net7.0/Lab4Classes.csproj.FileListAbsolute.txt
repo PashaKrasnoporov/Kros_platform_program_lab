@@ -1,0 +1,5 @@
+F:\1UNIVERSITY\4_corse_univ\Kros_progr\Lab4-25.11.23\lab4\Lab4Classes\obj\Release\net7.0\Lab4Classes.csproj.AssemblyReference.cache
+F:\1UNIVERSITY\4_corse_univ\Kros_progr\Lab4-25.11.23\lab4\Lab4Classes\obj\Release\net7.0\Lab4Classes.GeneratedMSBuildEditorConfig.editorconfig
+F:\1UNIVERSITY\4_corse_univ\Kros_progr\Lab4-25.11.23\lab4\Lab4Classes\obj\Release\net7.0\Lab4Classes.AssemblyInfoInputs.cache
+F:\1UNIVERSITY\4_corse_univ\Kros_progr\Lab4-25.11.23\lab4\Lab4Classes\obj\Release\net7.0\Lab4Classes.AssemblyInfo.cs
+F:\1UNIVERSITY\4_corse_univ\Kros_progr\Lab4-25.11.23\lab4\Lab4Classes\obj\Release\net7.0\Lab4Classes.csproj.CoreCompileInputs.cache
