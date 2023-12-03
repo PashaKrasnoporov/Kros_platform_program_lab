@@ -1,0 +1,32 @@
+﻿@model WebApp.Models.Function
+
+<h2>@Model.Name</h2>
+<p>@Model.Description</p>
+
+<form method="post" asp-action="GeneratePermutations">
+    <div class="form-group">
+        <label asp-for="Input">Введiть рядок</label>
+        <input asp-for="Input" class="form-control" />
+        <span asp-validation-for="Input" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Виконати</button>
+</form>
+
+@if (Model.Output != null)
+{
+    <h3>Результат:</h3>
+    <ul>
+        @foreach (var result in Model.Output)
+        {
+            <li>@result</li>
+        }
+    </ul>
+}
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert alert-danger" role="alert">
+        @Model.ErrorMessage
+    </div>
+}

@@ -1,0 +1,52 @@
+﻿
+@* @{
+    ViewData["Title"] = "function2";
+}
+
+<h1>function2</h1>
+
+@model WebApp.Models.Function
+
+<h2>function2.Name</h2>
+<p>function2.Description</p>
+
+<form asp-action="Function2" method="post">
+    <!-- Input fields and submit button -->
+    <input type="text" asp-for="Input" />
+    <button type="submit">Run Function</button>
+</form>
+
+<p>Output: function2.Output</p> *@
+
+@model WebApp.Models.Function
+
+<h2>@Model.Name</h2>
+<p>@Model.Description</p>
+
+<form method="post" asp-action="GenerateSequences">
+    <div class="form-group">
+        <label asp-for="Input">Введiть число</label>
+        <input asp-for="Input" class="form-control" />
+        <span asp-validation-for="Input" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Виконати</button>
+</form>
+
+@if (Model.Output != null)
+{
+    <h3>Результат:</h3>
+    <ul>
+        @foreach (var result in Model.Output)
+        {
+            <li>@result</li>
+        }
+    </ul>
+}
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert alert-danger" role="alert">
+        @Model.ErrorMessage
+    </div>
+}
