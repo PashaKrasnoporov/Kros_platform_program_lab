@@ -1,0 +1,17 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "gusztavvargadr/windows-10"
+  
+  config.vm.network "private_network", type: "dhcp"
+  config.vm.communicator = "winrm"
+  config.winrm.transport = :plaintext
+
+  config.vm.provision "shell", privileged: true, inline: <<-SHELL
+    # Ensure PowerShell is set to use TLS1.2
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
+    # Install the .NET Core SDK
+    Invoke-WebRequest -OutFile dotnet-sdk-installer.exe https://download.visualstudio.microsoft.com/download/pr/d0348cb9-c348-4c68-93aa-70122dd44a33/5f982a6ffdb29ed70af11ffc08d3189e/dotnet-sdk-7.0.402-win-x64.exe
+    Start-Process -Wait -FilePath .\dotnet-sdk-installer.exe
+    Remove-Item dotnet-sdk-installer.exe
+  SHELL
+end
