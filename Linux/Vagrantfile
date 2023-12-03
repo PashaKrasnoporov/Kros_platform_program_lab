@@ -1,0 +1,35 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/bionic64"
+  
+  config.vm.network "forwarded_port", guest: 5001, host: 5001
+  config.vm.network "private_network", type: "dhcp"
+
+  config.vm.provision "shell", inline: <<-SHELL
+    # Update repositories
+    sudo apt-get update
+
+    # Install necessary components for .NET
+    sudo apt-get install -y apt-transport-https wget
+
+    # Add Microsoft package repository
+    wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+    sudo dpkg -i packages-microsoft-prod.deb
+
+    # Install the .NET SDK 7
+    sudo apt-get update
+    sudo apt-get install -y dotnet-sdk-7.0
+    
+    sudo apt install -y nuget
+
+    nuget install AAleksandruk -Source http://10.0.2.2:8080/nuget
+
+    export AAleksandruk=~/AAleksandruk.1.0.0/lib/net7.0/Lab4.dll
+
+    echo 'export PATH=$PATH:$HOME/.dotnet/tools' >> /home/vagrant/.bash_profile
+
+    su - vagrant -c "dotnet nuget add source http://10.0.2.2:8080/nuget"
+    su - vagrant -c "dotnet tool install -g AAleksandruk --version 1.0.0 --ignore-failed-sources"
+    end
+    
+  SHELL
+end
