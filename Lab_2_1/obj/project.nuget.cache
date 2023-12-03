@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "TZ5WtwSNAb8pe3/B4jrtsM48nbLqSUkEGkqkdh5WU+3IqGPdO1eIo/CnVKXWzEde5lHadD14NGKlnNwXQ0/dog==",
+  "success": true,
+  "projectFilePath": "F:\\1UNIVERSITY\\4_corse_univ\\Kros_progr\\Library_Kod_Pasha_lr1-3\\Kod_Pasha_lr1-3\\Lab_2_1\\Lab_2_1.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://10.0.2.2:8080/nuget'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    },
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://localhost:5555/nuget'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}
